@@ -1,5 +1,5 @@
 # Linear Regression from Scratch
-##
+#
 This file contains simple implementations of **Linear Regression using Gradient Descent**, **Linear Regression using the Normal Equation**, and **Locally Weighted Regression**.
 
 ---
