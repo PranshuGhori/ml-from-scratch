@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mlscratch"
+version = "0.1.0"
+description = "Classic machine learning algorithms implemented from scratch in NumPy"
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [{ name = "Pranshu Ghori" }]
+dependencies = ["numpy>=1.24"]
+
+[project.optional-dependencies]
+dev = ["pytest>=7", "scikit-learn>=1.3"]
+notebook = ["matplotlib", "jupyter", "scikit-learn>=1.3"]
+
+[project.urls]
+Repository = "https://github.com/PranshuGhori/ml-from-scratch"
+
+[tool.setuptools]
+packages = ["mlscratch"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["tests"]
